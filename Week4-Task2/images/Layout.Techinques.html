@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Html Layout Techniques</title>
+</head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial,;
+}
+
+header {
+    background-color:aqua;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+
+nav {
+    float: left;
+    width: 30%;
+    height: 200px; 
+    background: #ae1d1d;
+    padding: 20px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; 
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color:yellowgreen;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+    width: 100%;
+    height: auto;
+    }
+}
+</style>
+<body>
+<h2>CSS Layout Float</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur incidunt commodi aliquam earum, assumenda velit!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel dignissimos error expedita architecto quibusdam maiores ab atque?s</p>
+
+<header>
+<h2>Cities</h2>
+</header>
+
+<section>
+<nav>
+<ul>
+    <li><a href="#">Delhi</a></li>
+    <li><a href="#">Chennai</a></li>
+    <li><a href="#">Hyderabad</a></li>
+</ul>
+</nav>
+
+<article>
+<h1>Delhi</h1>
+<p>Delhi, city and national capital territory, north-central India. The city of Delhi actually consists of two components: Old Delhi, in the north, the historic city; and New Delhi, in the south, since 1947 the capital of India, built in the first part of the 20th century as the capital of British India.</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, ut.</p>
+</article>
+</section>
+
+<footer>
+<p>Footer</p>
+</footer>
+
+</body>
+</html>
