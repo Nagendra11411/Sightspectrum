@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Float layout</title>
+</head>
+<style>
+    * {
+      box-sizing:border-box;
+    }
+    .box {
+      float: left;
+      width: 33.33%;
+      padding: 30px;
+    }
+  
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+   
+
+    .img{
+        float:right;
+    }
+   
+    .imgs{
+        float:none;
+    }
+    </style>
+<body>
+<h2>Grid of Boxes</h2>
+<p>Float boxes side by side:</p>
+
+<div class="clearfix">
+  <div class="box" style="background-color:#772a2a">
+  <p>Css Float layout</p>
+  </div>
+  <div class="box" style="background-color:#acd">
+  <p>Css Float layout.</p>
+  </div>
+  <div class="box" style="background-color:#cef">
+  <p>Css Float layout</p>
+  </div>
+  <p><STrong><em>Note:</em></STrong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt voluptas accusamus eveniet ipsum necessitatibus quod.</p>
+</div>
+<hr>
+
+    <div class="img">
+        <img src="C:\Users\SSLP11526\Downloads\Coffee.jpg" alt="Jaguar" style="width: 400px;;">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, alias.</p>
+    </div>
+    <br>
+<div class="imgs">
+        <img  src="C:\Users\SSLP11526\Downloads\Sightspectrum.jpg" alt="Sightspectrum">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sint quos necessitatibus?</p>
+
+</div>
+</body>
+</html>
