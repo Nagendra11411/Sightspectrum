@@ -1,0 +1,13 @@
+.table1 tr,th,td{
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 5px;
+    height: 50px;
+    width: 50%;
+    text-align: center;
+    background-color: lightblue;
+
+}
