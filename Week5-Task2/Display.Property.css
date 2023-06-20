@@ -1,0 +1,28 @@
+body
+{
+    background-color: #efefef;
+    
+}
+h1{
+    background-color:#afaf;
+    text-align: center;
+}
+#Box{
+    border: 2px solid darkred;
+    display:inline-block;
+    background-color: black;
+    width: 88%;
+    
+}   
+.box_1{
+    background-color: red;
+}
+.box_2{
+    background-color: orange;
+}
+.box_3{
+    background-color: green;
+}
+.box_4{
+    background-color: yellow;
+}
