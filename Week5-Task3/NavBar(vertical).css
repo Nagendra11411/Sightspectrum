@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+    font-size: 25px;
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color:#fefe;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+}
+li a{
+    display: block;
+    padding: 8px 16px;
+
+        text-decoration: none;
+    
+}
+li a:hover{
+    background-color: black;
+}
+#header{
+margin-left: 12%;
+padding: 1px 16px;
+}
+h1{
+    background-color: mediumpurple;
+    padding: 5px;
+    text-align: center;
+    margin: 0px;
+    position:fixed;
+
+}
