@@ -1,0 +1,55 @@
+body{
+
+    background-color: lightgoldenrodyellow;
+}
+.container{
+    display:grid;
+    background-color: aliceblue;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: "nav nav nav nav"
+    "Sidebar Main Main Main"
+    "Sidebar Content1 Content2 Content3"
+    "Sidebar Footer Footer Footer";
+    gap: 4px;
+    
+}
+nav{
+    background-color: blueviolet;
+    grid-area: nav;
+}
+main{
+    background-color: greenyellow;
+    grid-area: main;
+}
+
+#Sidebar{
+    background-color: darkcyan;
+    grid-area: Sidebar;
+}
+#Content1{
+    background-color: rosybrown; 
+    grid-area:Content1;
+
+}
+#Content2{
+    background-color: bisque;
+    grid-area:Content2;
+}
+#Content3{
+    background-color: mediumspringgreen;
+    grid-area:Content3;
+}
+Footer{
+    background-color: violet;
+    grid-area:Footer;
+}
+@media screen and (max-width:705px){
+
+.container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 1.0fr 1.3fr 1.2fr 1.2fr 1.1fr;
+    grid-template-areas: "nav" "main" "Sidebar" "Content1" "Content2" "Content3" "Footer";
+}
+}
